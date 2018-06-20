@@ -8480,11 +8480,20 @@ section.slide > .stripes {
 }
 .btn-to-top {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: red;
-  text-align: center;
+  bottom: 15px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0070b1;
+  border-radius: 50%;
+}
+.btn-to-top::before {
+  content: '\e00f';
+  color: #0070b1;
+  font: 15px sap-icofonts;
 }
 h2,
 .head-line {
@@ -9879,6 +9888,10 @@ table table td {
     max-height: 30px;
     height: 100%;
   }
+}
+#navigationAside {
+  position: absolute;
+  top: 70px;
 }
 .card-area__row {
   display: flex;
